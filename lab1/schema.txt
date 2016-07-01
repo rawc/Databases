@@ -1,0 +1,41 @@
+Louis Chatta
+lchatta@ucsc.edu
+Cmps180:Lab1
+Outlining Schema
+
+1) Downtown Video
+     
+     - Table 1) Films:
+        attributes: 'filmId', 'title', 'description', 'rating', 'length'
+        key constraint: 'filmId'
+        schema: Films(filmId,title,description,rating,length,)
+     
+     - Table 2) Customers:
+        attributes: 'customerId','firstName', 'lastName', 'email', 'addressId'
+        key constraint: 'customerId'
+        schema: Customers(customerId,firstName,lastName,email,addressId)
+
+     - Table 3) Addresses:
+        attributes: 'addressId', 'streetAddress', 'city', 'state', 'postalCode',
+                    'phoneNumber'
+        key constaint: 'addressId'
+        schema: Addresses(addressId,streetAddress,city,state,
+                postalCode,phoneNumber)
+
+2) City Books
+
+     - Table 1) Books:
+        attributes: 'title', 'authorId'
+        key constraint: 'title'
+        schema: Books(title,authorId)
+
+     - Table 2) Authors:
+        attributes: 'authorId', 'firstName', 'lastName'
+        key constraint: 'authorId'
+        schema: Authors(authorId,firstName,lastName)
+
+     - Table 3) Customers:
+        attributes: 'customerId', 'firstName', 'lastName', 'phoneNumber'  
+        key constraint: 'customerId'
+        schema: Customers(customerId,firstName,lastName,phoneNumber)
+
